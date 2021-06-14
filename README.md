@@ -1,0 +1,1 @@
+This is the google homepage project for the foundations course of the odin project. 
