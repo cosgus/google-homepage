@@ -1,192 +1,202 @@
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Material+Icons">
+<html>
+    <head>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Material+Icons">
 
-    <style>
-        body {
-            font-size: 14px;
-            font-family: arial, sans-serif;
-            color: #222;
-        }
-        .big-daddy {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        .little-daddy {
-            flex-shrink: 0;
-            box-sizing: border-box;
-        }
-        .header-div {
-            display: flex;
-            align-items: center;
-            padding: 6px;
-            height: 60px;
-        }
-        .header-link {
-            display: inline-block;
-            padding: 5px;
-            margin: 0 5px;
-            color: #222;
-        }
-        a {
-            text-decoration: none;
-        }
-        .sub-header {
-            display:inline-block;
-            flex-grow: 1;
-        }
-        #gb {
-            min-width: auto;
-            height: 48px;
-            color:black;
-            position:relative;
-        }
-        .right-header{
-            float: right;
-            padding-left:32px;
-            box-sizing: border-box;
-            height:48px;
-            line-height: normal;
-            padding: 0 4px;
-            justify-content: flex-end;
-            white-space: nowrap;
-            -moz-box-align: center;
-            align-items: center;
-            display: flex;
-            flex: 0 0 auto;
-            font-family: Roboto, RobotoDraft, Arial, sans-serif;
-            font-size: 13px;
-        }
-        #right-header-links {
-            line-height: normal;
-            padding-right: 15px;
-            white-space: nowrap;
-        }
-        .gmail-link, .images-link {
-            display: inline-block;
-            padding-left:15px;
-        }
-        .gb-f {
-            display: inline-block;
-            line-height: 24px;
-            vertical-align: middle;
-        }
-        a.gb-f {
-            color: rgba(0,0,0,0.87);
-            text-decoration: none;
-        }
-        #right-header-images {
-            float:right;
-            position: relative;
-            line-height: normal;
-            white-space: nowrap;
-        }
-        .apps-link {
-            position: relative;
-            display: inline-block;
-            vertical-align: middle;
-            padding: 4px;
-        }
-        .account-link {
-            padding: 4px;
-            display: inline-block;
-            vertical-align: middle;
-            position: relative;
-        }
-        .gb-C {
-            display:inline-block;
-            outline: none;
-            vertical-align: middle;
-            border-radius: 2px;
-            box-sizing: border-box;
-            height: 40px;
-            width: 40px;
-            color: #000;
-            cursor: pointer;
-            opacity: 1;
-            background-position: -64px -29px;
-            padding: 8px;
-        }
-        .gb-C2 {
-            padding: 4px;
-        }
-        .account-image {
-            background-size: 32px 32px;
-            border: 0;
-            border-radius: 50%;
-            display: block;
-            margin: 0;
-            position: relative;
-            height:32px;
-            width: 32px;
-            z-index: 0;
-        }
-        .logo-div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 92px;
-            max-height: 290px;
-            height: calc(100% - 560px);
-        }
-        .logo-container {
-            max-height: 92px;
-            position: relative;
-            height: 100%; 
-            margin-top: auto; 
-        }
-        #logo {
-            max-height: 100%;
-            max-width: 100%;
-            object-fit: contain;
-            object-position: center bottom;
-            width: auto; 
-        }
-    </style>
-</head>
-<body>
-    <div class="big-daddy">
-        <div class="little-daddy header-div">
-            <a class="header-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwinzJ6orJfxAhWrQzABHSa-CfUQkNQCCAI&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw13L0SpN0L7ycx9R0_i4R2S">About</a>
-            <a class="header-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwinzJ6orJfxAhWrQzABHSa-CfUQpMwCCAM&url=https%3A%2F%2Fstore.google.com%2FUS%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&usg=AOvVaw0wvkRBURf91YdMQCXOelDf">Store</a>
-            <div class="sub-header">
-                <div id="gb" class="gb_pa">
-                    <div class="right-header">
-                        <div id="right-header-links">
-                            <div class="gmail-link">
-                                <a class="gb-f" href="https://www.gmail.com/">Gmail</a>
+        <style>
+            body {
+                font-size: 14px;
+                font-family: arial, sans-serif;
+                color: #222;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background: #fff;
+            }
+            html {
+                min-width: 400px;
+                height: 100%;
+            }
+            .big-daddy {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            .little-daddy {
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+            .header-div {
+                display: flex;
+                align-items: center;
+                padding: 6px;
+                height: 60px;
+            }
+            .header-link {
+                display: inline-block;
+                padding: 5px;
+                margin: 0 5px;
+                color: #222;
+            }
+            a {
+                text-decoration: none;
+            }
+            .sub-header {
+                display:inline-block;
+                flex-grow: 1;
+            }
+            #gb {
+                min-width: auto;
+                height: 48px;
+                color:black;
+                position:relative;
+            }
+            .right-header{
+                float: right;
+                padding-left:32px;
+                box-sizing: border-box;
+                height:48px;
+                line-height: normal;
+                padding: 0 4px;
+                justify-content: flex-end;
+                white-space: nowrap;
+                -moz-box-align: center;
+                align-items: center;
+                display: flex;
+                flex: 0 0 auto;
+                font-family: Roboto, RobotoDraft, Arial, sans-serif;
+                font-size: 13px;
+            }
+            #right-header-links {
+                line-height: normal;
+                padding-right: 15px;
+                white-space: nowrap;
+            }
+            .gmail-link, .images-link {
+                display: inline-block;
+                padding-left:15px;
+            }
+            .gb-f {
+                display: inline-block;
+                line-height: 24px;
+                vertical-align: middle;
+            }
+            a.gb-f {
+                color: rgba(0,0,0,0.87);
+                text-decoration: none;
+            }
+            #right-header-images {
+                float:right;
+                position: relative;
+                line-height: normal;
+                white-space: nowrap;
+            }
+            .apps-link {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 4px;
+            }
+            .account-link {
+                padding: 4px;
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+            }
+            .gb-C {
+                display:inline-block;
+                outline: none;
+                vertical-align: middle;
+                border-radius: 2px;
+                box-sizing: border-box;
+                height: 40px;
+                width: 40px;
+                color: #000;
+                cursor: pointer;
+                opacity: 1;
+                background-position: -64px -29px;
+                padding: 8px;
+            }
+            .gb-C2 {
+                padding: 4px;
+            }
+            .account-image {
+                background-size: 32px 32px;
+                border: 0;
+                border-radius: 50%;
+                display: block;
+                margin: 0;
+                position: relative;
+                height:32px;
+                width: 32px;
+                z-index: 0;
+            }
+            .logo-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 92px;
+                max-height: 290px;
+                height: calc(100% - 560px);
+            }
+            .logo-container {
+                max-height: 92px;
+                position: relative;
+                height: 100%; 
+                margin-top: auto; 
+            }
+            #logo {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                object-position: center bottom;
+                width: auto; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="big-daddy">
+            <div class="little-daddy header-div">
+                <a class="header-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwinzJ6orJfxAhWrQzABHSa-CfUQkNQCCAI&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw13L0SpN0L7ycx9R0_i4R2S">About</a>
+                <a class="header-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwinzJ6orJfxAhWrQzABHSa-CfUQpMwCCAM&url=https%3A%2F%2Fstore.google.com%2FUS%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&usg=AOvVaw0wvkRBURf91YdMQCXOelDf">Store</a>
+                <div class="sub-header">
+                    <div id="gb" class="gb_pa">
+                        <div class="right-header">
+                            <div id="right-header-links">
+                                <div class="gmail-link">
+                                    <a class="gb-f" href="https://www.gmail.com/">Gmail</a>
+                                </div>
+                                <div class="images-link">
+                                    <a class="gb-f" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+                                </div>
                             </div>
-                            <div class="images-link">
-                                <a class="gb-f" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+                            <div id="right-header-images">
+                                <div class="apps-link">
+                                    <a class="gb-C" aria-label="Google apps" href="https://www.google.com/intl/en/about/products/" aria-expanded="false" role="button" tab-index="0">
+                                        <span class="material-icons">apps</span>  
+                                    </a>
+                                </div>
+                                <div class="account-link">
+                                    <a class="gb-C gb-C2" href="https://www.google.com/imghp?hl=en&ogbl" aria-label="Google Account" role="button" aria-expanded="false">
+                                        <img class="account-image" src="https://lh3.googleusercontent.com/ogw/ADea4I7Uzi-SdUj2HNNc4JO_uBuuAKS4QT3dJsbwGyu_=s32-c-mo" alt="account">
+                                    </a>
+                                </div>
                             </div>
+                            <div class="gb_Se"></div>
+                            <div class="iframe"></div>
                         </div>
-                        <div id="right-header-images">
-                            <div class="apps-link">
-                                <a class="gb-C" aria-label="Google apps" href="https://www.google.com/intl/en/about/products/" aria-expanded="false" role="button" tab-index="0">
-                                    <span class="material-icons">apps</span>  
-                                </a>
-                            </div>
-                            <div class="account-link">
-                                <a class="gb-C gb-C2" href="https://www.google.com/imghp?hl=en&ogbl" aria-label="Google Account" role="button" aria-expanded="false">
-                                    <img class="account-image" src="https://lh3.googleusercontent.com/ogw/ADea4I7Uzi-SdUj2HNNc4JO_uBuuAKS4QT3dJsbwGyu_=s32-c-mo" alt="account">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="gb_Se"></div>
-                        <div class="iframe"></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="little-daddy logo-div">
-            <div class="logo-container">
-                <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <div class="little-daddy logo-div">
+                <div class="logo-container">
+                    <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                </div>
             </div>
+            <div class="little-daddy form-div"></div>
+            <div class="little-daddy bottom-div"></div>
+            <div class="little-daddy footer-div"></div>
         </div>
-        <div class="little-daddy form-div"></div>
-        <div class="little-daddy bottom-div"></div>
-        <div class="little-daddy footer-div"></div>
-    </div>
-</body>
+    </body>
+</html>
