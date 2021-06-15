@@ -259,6 +259,12 @@
                 cursor: pointer;
                 user-select: none;
             }
+            .google-search:hover, .lucky:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                background-color: #f8f9fa;
+                border: 1px solid #dadce0;
+                color: #202124;
+            }
             .lucky {
                 background-color: #f8f9fa;
                 border: 1px solid #f8f9fa;
@@ -344,7 +350,35 @@
                 padding: 15px;
                 white-space: nowrap;
             }
-            
+            .x-div {
+                display: flex;
+                flex: 0 0 auto;
+                margin-top: 10px;
+                align-items: stretch;
+                flex-direction: row;
+            }
+            .x-container {
+                display: flex;
+                flex: 1 0 auto;
+                cursor: pointer;
+                align-items:center;
+                border: 0;
+                background-color: transparent;
+                outline: none;
+                padding: 0 8px;
+                line-height: 44px;
+            }
+            .x {
+                font-family: 'Material Icons';
+                height: 100%;
+                color: #70757a;
+                line-height: 24px;
+                outline: none;
+                display: inline-block;
+                fill: currentColor;
+                width: 24px;
+                position: relative;
+            }
         </style>
     </head>
     <body>
@@ -398,6 +432,11 @@
                             <div class="search-field-container">
                                 <div class="search-field"></div>
                                 <input class="input" aria-label="Search" title="Search">
+                            </div>
+                            <div class="x-div">
+                                <div class="x-container">
+                                    <span class="x">close</span>
+                                </div>
                             </div>
                         </div>
                         <div class="search-buttons">
