@@ -14,6 +14,12 @@
                 padding: 0;
                 background: #fff;
             }
+            button {
+                border: none;
+                font-size: 14px;
+                background: none;
+                margin: 0;
+            }
             html {
                 min-width: 400px;
                 height: 100%;
@@ -153,6 +159,179 @@
                 object-position: center bottom;
                 width: auto; 
             }
+            .form-div {
+                padding: 20px;
+                max-height: 160px;
+            }
+            .form-container {
+                position: relative;
+                margin: 0 auto;
+                padding-top: 6px;
+                width: auto;
+                max-width:584px;
+            }
+            .search-bar {
+                width: auto;
+                max-width: 584px;
+                display: flex;
+                border-color: rgb(223, 225,229);
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 24px;
+                flex: 1;
+                padding: 0 8px 0 14px;
+            }
+            .search-icon-container {
+                display: flex;
+                align-items: center;
+                padding-right: 13px;
+                margin-top: 0;
+                margin: auto;
+                height: 20px;
+                width: 20px;
+            }
+            .search-icon {
+                font-family: 'Material Icons';
+                margin-top: 0;
+                color: #9aa0a6;
+                height: 20px;
+                width: 20px;
+                display: inline-block;
+                fill: currentColor;
+                line-height:24px;
+                position: relative;
+            }
+            .search-field-container {
+                display: flex;
+                flex: 1;
+                flex-wrap: wrap;
+            }
+            .search-field {
+                color: transparent;
+                flex: 100%;
+                white-space: pre;
+                height: 34px;
+            }
+            .input {
+                background-color: transparent;
+                border: none;
+                margin: 0;
+                padding: 0;
+                color: rgba(0,0,0,0.87);
+                word-wrap: break-word;
+                outline: none;
+                display:flex;
+                flex:100%;
+                margin-top: -37px;
+                height: 34px;
+                font-size: 16px;
+            }
+            .search-buttons {
+                height: 70px;
+                padding-top: 18px;
+            }
+            .google-search {
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                color: #3c4043;
+                font-family: arial, sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align:center;
+                cursor: pointer;
+                user-select: none;
+            }
+            .lucky {
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                color: #3c4043;
+                font-family: arial, sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align:center;
+                cursor: pointer;
+                user-select: none;
+            }
+            .bottom-div {
+                flex-grow: 1; 
+            }
+            .bottom-div-container {
+                text-align: center;
+            }
+            .promo-div {
+                font-size: small;
+                margin-bottom: 32px;
+            }
+            .promo {
+                color: #1a0dab;
+                text-decoration: none;
+            }
+            .footer-div {
+                background: #f2f2f2;
+            }
+            .footer-container {
+                justify-content: space-evenly;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 20px;
+            }
+            .all-footer-div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .left-div {
+                justify-content: flex-start;
+                min-width: 30%;
+                order: 1;
+            }
+            .footer-links {
+                color: #70757a;
+                display: block;
+                padding: 15px;
+                white-space: nowrap;
+            }
+            .top-div {
+                order: 0;
+                width: 100%;
+                justify-content: center;
+            }
+            .right-div {
+                justify-content: flex-end;
+                min-width: 30%;
+                order: 3;
+            }
+            .leaf-img {
+                height: 14px;
+                margin-right: 6px;
+            }
+            .carbon-text {
+                white-space: nowrap;
+                vertical-align: top;
+            }
+            .settings-container {
+                position: relative;
+            }
+            .settings-button {
+                cursor: pointer;
+                width: 100%;
+                text-align: left;
+                color: #70757a;
+                display: block;
+                padding: 15px;
+                white-space: nowrap;
+            }
+            
         </style>
     </head>
     <body>
@@ -194,9 +373,59 @@
                     <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
                 </div>
             </div>
-            <div class="little-daddy form-div"></div>
-            <div class="little-daddy bottom-div"></div>
-            <div class="little-daddy footer-div"></div>
+            <div class="little-daddy form-div">
+                <form action="/search" method="GET" role="search">
+                    <div class="form-container">
+                        <div class="search-bar">
+                            <div class="search-icon-container">
+                                <span class="search-icon">
+                                    search
+                                </span>
+                            </div>
+                            <div class="search-field-container">
+                                <div class="search-field"></div>
+                                <input class="input" aria-label="Search" title="Search">
+                            </div>
+                        </div>
+                        <div class="search-buttons">
+                            <center>
+                                <input class="google-search" value="Google Search" name="btnK" type="submit">
+                                <input class="lucky" value="I'm Feeling Lucky" name="btnI" type="submit"></uboyt>
+                            </center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="little-daddy bottom-div">
+                <div class="bottom-div-container">
+                    <div class="promo-div">
+                        <a class="promo" href="https://www.google.com/url?q=https://blog.google/products/workspace/google-workspace-everyone%3Futm_source%3Dhpp%26utm_medium%3Dreferral%26utm_campaign%3D%26utm_content%3D%26utm_term%3D&source=hpp&id=19024768&ct=3&usg=AFQjCNFGgDg3JJ5g94MfY2th0KZEAZ2z_g&sa=X&ved=0ahUKEwje_9nNoJjxAhWsRzABHQpbDZcQ8IcBCA8" rel="nofollow">
+                        Google Workspace is now available to everyone</a>
+                    </div>
+                </div>
+            </div>
+            <div class="little-daddy footer-div">
+                <div class="footer-container">
+                    <div class="all-footer-div left-div">
+                        <a class="footer-links" href="#">Advertising</a>
+                        <a class="footer-links" href="#">Business</a>
+                        <a class="footer-links" href="#">How Search Works</a>
+                    </div>
+                    <div class="all-footer-div top-div">
+                        <a class="footer-links" href="#">
+                            <img class="leaf-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC">
+                            <span class="carbon-text">Carbon neutral since 2007</span>
+                        </a>
+                    </div>
+                    <div class="all-footer-div right-div">
+                        <a class="footer-links" href="#">Privacy</a>
+                        <a class="footer-links" href="#">Terms</a>
+                        <div class="settings-container">
+                            <button class="settings-button">Settings</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
